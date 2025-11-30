@@ -19,7 +19,7 @@ export async function uploadArchive(addonKey: string, redaxoLogin: string, redax
     formData.append('file[version]', version);
     formData.append('file[redaxo_versions][0]', '5.x');
     formData.append('file[description]', description);
-    formData.append('file[status]', '1');
+    formData.append('file[status]', '0');
     formData.append('file[checksum]', md5Sum);
     formData.append('archive', fs.createReadStream(archive));
 
